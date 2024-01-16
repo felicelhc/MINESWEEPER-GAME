@@ -128,3 +128,8 @@ a {
   color: #55e1ff;
   text-decoration: none;
 }
+
+a:hover {
+  color: #fcf88f;
+  transition: all 150ms ease-in-out;
+}
