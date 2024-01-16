@@ -76,14 +76,14 @@ h1 {
 
 #play-again-btn {
   background: #fff;
-  border: solid 1px #000;
+  border: solid 1px #fff;
   font-family: "darker grotesque";
   font-size: 24px;
   padding: 4px 20px 8px 20px;
   text-transform: uppercase;
 }
 
-.btn:hover {
+#play-again-btn:hover {
   background: #000;
   color: #fff;
   cursor: pointer;
@@ -117,4 +117,14 @@ h1 {
   justify-content: center;
   text-align: center;
   gap: 16px;
+}
+
+footer {
+  font-size: 15px;
+  text-align: center;
+}
+
+a {
+  color: #55e1ff;
+  text-decoration: none;
 }

@@ -23,8 +23,6 @@ function updateScore() {
 for (let i = 1; i <= 100; i++) {
   const cell = document.createElement("div");
   cell.classList.add("cell");
-  cell.classList.add("cell-bomb");
-
   cell.addEventListener("click", function () {
     if (bombsList.includes(i)) {
       cell.classList.add("cell-bomb");
