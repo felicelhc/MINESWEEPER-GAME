@@ -99,7 +99,7 @@ h1 {
 }
 
 .cell-bomb {
-  backround-image: url("./img/bomb.png");
+  background-image: url("/img/bomb.png");
   background-size: contain;
 }
 

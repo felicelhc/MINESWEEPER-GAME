@@ -5,8 +5,8 @@ const endGameText = document.querySelector(".game-over-text");
 const playAgainBtn = document.querySelector("#play-again-btn");
 
 const totalCells = 100;
-const totalBombs = 90;
-const maxScore = 5;
+const totalBombs = 10;
+const maxScore = 100;
 const bombList = [];
 
 let score = 0;
@@ -16,7 +16,7 @@ function updateScore() {
   scoreCounter.innerText = score.toString().padStart(5, "0");
 
   if (score === maxScore) {
-    endGame();
+    endGame(true);
   }
 }
 
@@ -37,7 +37,7 @@ for (let i = 1; i <= 100; i++) {
   grid.appendChild(cell);
 }
 
-while (bombsLIst.length < totalBombs) {
+while (bombsList.length < totalBombs) {
   const randomNumber = Math.floor(Math.random() * totalCells) + 1;
 
   if (!bombsList.includes(randomNumber)) {
@@ -50,7 +50,6 @@ function endGame(isVictory) {
     endGameText.innerHTML = "YOU <br /> WON";
     endGameScreen.classList.add("win");
   }
-
   endGameScreen.classList.remove("hidden");
 }
 
