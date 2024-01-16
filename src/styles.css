@@ -92,3 +92,17 @@ h1 {
 .hidden {
   display: none;
 }
+
+.cell-clicked {
+  background: rgb(85, 225, 255);
+  cursor: not-allowed;
+}
+
+.cell-bomb {
+  backround-image: url("./img/bomb.png");
+  background-size: contain;
+}
+
+.win {
+  background: #000;
+}
