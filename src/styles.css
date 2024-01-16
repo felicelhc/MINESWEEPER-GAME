@@ -73,7 +73,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.btn {
+#play-again-btn {
   background: #fff;
   border: solid 1px #000;
   font-family: "darker grotesque";
