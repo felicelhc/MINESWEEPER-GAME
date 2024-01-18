@@ -103,6 +103,7 @@ h1 {
   background-image: url("img/bomb.png");
   background-size: contain;
   background-position: center;
+  cursor: not-allowed;
 }
 
 .win {

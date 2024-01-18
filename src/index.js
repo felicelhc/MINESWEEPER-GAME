@@ -6,7 +6,7 @@ const playAgainBtn = document.querySelector("#play-again-btn");
 
 const totalCells = 100;
 const totalBombs = 10;
-const maxScore = 100;
+const maxScore = totalCells - totalBombs;
 const bombsList = [];
 
 let score = 0;
@@ -17,6 +17,18 @@ function updateScore() {
 
   if (score === maxScore) {
     endGame(true);
+  }
+}
+
+function revealAll() {
+  const cells = document.querySelectorAll(".cell");
+
+  for (let i = 1; i <= cells.length; i++) {
+    const cell = cells[i - 1];
+
+    if (bombsList.includes(i)) {
+      cell.classList.add("cell-bomb");
+    }
   }
 }
 
@@ -48,6 +60,7 @@ function endGame(isVictory) {
     endGameText.innerHTML = "YOU <br /> WON";
     endGameScreen.classList.add("win");
   }
+  revealAll();
   endGameScreen.classList.remove("hidden");
 }
 
