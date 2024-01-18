@@ -32,16 +32,17 @@ function revealAll() {
   }
 }
 
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= totalCells; i++) {
   const cell = document.createElement("div");
   cell.classList.add("cell");
   cell.addEventListener("click", function () {
     if (bombsList.includes(i)) {
       cell.classList.add("cell-bomb");
       endGame();
+    } else {
+      cell.classList.add("cell-clicked");
+      updateScore();
     }
-    cell.classList.add("cell-clicked");
-    updateScore();
   });
 
   grid.appendChild(cell);
