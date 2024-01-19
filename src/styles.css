@@ -22,7 +22,7 @@ body {
   background-color: #000;
 }
 
-.score-box {
+.score {
   font-size: 32px;
   display: flex;
   justify-content: space-between;
@@ -100,7 +100,8 @@ h1 {
 }
 
 .cell-bomb {
-  background-image: url("img/bomb.png");
+  background-color: #f65352;
+  background-image: url("img/bomb copy.png");
   background-size: contain;
   background-position: center;
   cursor: not-allowed;
